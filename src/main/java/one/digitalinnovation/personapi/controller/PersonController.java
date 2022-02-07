@@ -28,11 +28,6 @@ public class PersonController {
 
     private PersonService personService;
 
-    @GetMapping
-    public String getPerson(){
-        return "API Test.";
-    }
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO) {
