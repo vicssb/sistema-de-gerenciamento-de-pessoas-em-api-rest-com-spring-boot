@@ -28,10 +28,10 @@ public class PersonController {
 
     private PersonService personService;
 
-//    @GetMapping
-//    public String getBook(){
-//        return "API Test.";
-//    }
+    @GetMapping
+    public String getPerson(){
+        return "API Test.";
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
